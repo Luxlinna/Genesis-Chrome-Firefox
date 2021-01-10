@@ -1,2 +1,1 @@
-# Genesis-Chrome-Firefox
-Support chrome and Firefox
+# Genesis-Portfolio-Template
