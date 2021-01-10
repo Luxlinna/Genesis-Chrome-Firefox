@@ -1,7 +1,18 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .grid-contact__picture {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-rows: 100%;
     grid-template-rows: 100%;
     row-gap: 96px;
     padding-top: 96px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }

@@ -1,6 +1,19 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .project-information {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 635px, ;
+    -ms-flex: 635px, auto;
     flex: 635px, auto;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     gap: 30px;
     padding-top: 96px;
@@ -21,14 +34,77 @@
 }
 
 .project-information__detail {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: auto auto;
     grid-template-columns: auto auto;
+    -ms-grid-rows: (auto)[6];
     grid-template-rows: repeat(6, auto);
     border-bottom: 1 solid grey;
     padding-top: 18px;
     padding-bottom: 18px;
     width: 335px;
     height: 343px;
+}
+
+.project-information__detail>*:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+
+.project-information__detail>*:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+}
+
+.project-information__detail>*:nth-child(3) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+}
+
+.project-information__detail>*:nth-child(4) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+}
+
+.project-information__detail>*:nth-child(5) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+}
+
+.project-information__detail>*:nth-child(6) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+}
+
+.project-information__detail>*:nth-child(7) {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+}
+
+.project-information__detail>*:nth-child(8) {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+}
+
+.project-information__detail>*:nth-child(9) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+}
+
+.project-information__detail>*:nth-child(10) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 2;
+}
+
+.project-information__detail>*:nth-child(11) {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+}
+
+.project-information__detail>*:nth-child(12) {
+    -ms-grid-row: 6;
+    -ms-grid-column: 2;
 }
 
 .project-information__detail--item {
@@ -40,8 +116,13 @@
     padding-bottom: 18px;
 }
 
+
+/*   */
+
 .wrapper {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-rows: 660px, 93px, 400px;
     grid-template-rows: 660px, 93px, 400px;
     row-gap: 40px;
     margin-top: 96px;
@@ -53,8 +134,14 @@
 }
 
 .wrapper-item2 {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: auto 30px auto 30px auto;
     grid-template-columns: repeat(3, auto);
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
     column-gap: 30px;
 }

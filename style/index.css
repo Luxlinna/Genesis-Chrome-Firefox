@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 body {
     background-color: #FFFFFF;
     margin-top: 61px;
@@ -12,10 +19,16 @@ body {
 /* Navigation and Logo Section */
 
 .logo {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 80% 10px 10% 10px 10%;
     grid-template-columns: 80% 10% 10%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding-top: 61px;
+    -webkit-column-gap: 10px;
+    -moz-column-gap: 10px;
     column-gap: 10px;
     font-size: 18px;
     font-weight: bold;
@@ -41,15 +54,21 @@ a:active {
 /* Header and information section */
 
 .header {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 635px 30px auto;
     grid-template-columns: 635px auto;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     gap: 30px;
     padding-top: 96px;
 }
 
 .header-column1 {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-rows: 50px 20px 201px;
     grid-template-rows: 50px 201px;
     gap: 20px;
 }
@@ -67,7 +86,9 @@ a:active {
 }
 
 .header-column2 {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-rows: 221px 30px;
     grid-template-rows: 221px 30px;
     text-align: left;
     font-size: 18px;
@@ -80,26 +101,34 @@ a:active {
 /* Picture section */
 
 .grid-picture {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: auto 15px auto 15px auto;
     grid-template-columns: auto auto auto;
     gap: 15px;
     margin-top: 156px;
 }
 
 .grid-column1 {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-rows: auto 15px auto 15px auto 15px auto;
     grid-template-rows: auto auto auto auto;
     row-gap: 15px;
 }
 
 .grid-column2 {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-rows: auto 15px auto 15px auto 15px auto;
     grid-template-rows: auto auto auto auto;
     row-gap: 15px;
 }
 
 .grid-column3 {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-rows: auto 15px auto 15px auto 15px auto;
     grid-template-rows: auto auto auto auto;
     row-gap: 15px;
     justify-items: right;
@@ -109,8 +138,11 @@ a:active {
 /*  Service Section */
 
 .grid-service {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 635px 13px auto 13px auto;
     grid-template-columns: 635px auto auto;
+    -ms-grid-row: 106;
     grid-row: 106px;
     font-size: 28px;
     gap: 13px;
@@ -120,8 +152,11 @@ a:active {
 
 .grid-service ul,
 li {
+    display: -ms-grid;
     display: grid;
     list-style-type: none;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     text-align: left;
     font-size: 18px;
@@ -133,9 +168,12 @@ li {
 /* Awards Section */
 
 .grid-Awards1 {
+    display: -ms-grid;
     display: grid;
     margin-top: 96px;
+    -ms-grid-columns: 500px 40px 190px 40px 180px 40px 110px;
     grid-template-columns: 500px 190px 180px 110px;
+    -ms-grid-rows: auto 20px auto 20px auto 20px auto;
     grid-template-rows: auto auto auto auto;
     text-align: left;
     border-bottom: 1px solid grey;
@@ -143,13 +181,98 @@ li {
     padding-top: 40px;
     padding-bottom: 0px;
     font-size: 16px;
+    -webkit-column-gap: 40px;
+    -moz-column-gap: 40px;
     column-gap: 40px;
     row-gap: 20px;
 }
 
+.grid-Awards1>*:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+
+.grid-Awards1>*:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+}
+
+.grid-Awards1>*:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+}
+
+.grid-Awards1>*:nth-child(4) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 7;
+}
+
+.grid-Awards1>*:nth-child(5) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+}
+
+.grid-Awards1>*:nth-child(6) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+}
+
+.grid-Awards1>*:nth-child(7) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+}
+
+.grid-Awards1>*:nth-child(8) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 7;
+}
+
+.grid-Awards1>*:nth-child(9) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+}
+
+.grid-Awards1>*:nth-child(10) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
+}
+
+.grid-Awards1>*:nth-child(11) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 5;
+}
+
+.grid-Awards1>*:nth-child(12) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 7;
+}
+
+.grid-Awards1>*:nth-child(13) {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+}
+
+.grid-Awards1>*:nth-child(14) {
+    -ms-grid-row: 7;
+    -ms-grid-column: 3;
+}
+
+.grid-Awards1>*:nth-child(15) {
+    -ms-grid-row: 7;
+    -ms-grid-column: 5;
+}
+
+.grid-Awards1>*:nth-child(16) {
+    -ms-grid-row: 7;
+    -ms-grid-column: 7;
+}
+
 .grid-Awards2 {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 500px 40px 190px 40px 180px 40px 110px;
     grid-template-columns: 500px 190px 180px 110px;
+    -ms-grid-rows: auto 20px auto 20px auto 20px auto;
     grid-template-rows: auto auto auto auto;
     text-align: left;
     border-bottom: 1px solid grey;
@@ -157,7 +280,89 @@ li {
     padding-bottom: 0px;
     font-size: 16px;
     row-gap: 20px;
+    -webkit-column-gap: 40px;
+    -moz-column-gap: 40px;
     column-gap: 40px;
+}
+
+.grid-Awards2>*:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+
+.grid-Awards2>*:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+}
+
+.grid-Awards2>*:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+}
+
+.grid-Awards2>*:nth-child(4) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 7;
+}
+
+.grid-Awards2>*:nth-child(5) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+}
+
+.grid-Awards2>*:nth-child(6) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+}
+
+.grid-Awards2>*:nth-child(7) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+}
+
+.grid-Awards2>*:nth-child(8) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 7;
+}
+
+.grid-Awards2>*:nth-child(9) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+}
+
+.grid-Awards2>*:nth-child(10) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
+}
+
+.grid-Awards2>*:nth-child(11) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 5;
+}
+
+.grid-Awards2>*:nth-child(12) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 7;
+}
+
+.grid-Awards2>*:nth-child(13) {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+}
+
+.grid-Awards2>*:nth-child(14) {
+    -ms-grid-row: 7;
+    -ms-grid-column: 3;
+}
+
+.grid-Awards2>*:nth-child(15) {
+    -ms-grid-row: 7;
+    -ms-grid-column: 5;
+}
+
+.grid-Awards2>*:nth-child(16) {
+    -ms-grid-row: 7;
+    -ms-grid-column: 7;
 }
 
 .grid-Awards-style {
@@ -166,43 +371,71 @@ li {
 }
 
 .grid-Awards__name1 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-area: 1 / 1 / span 4 / span 1;
     font-size: 22px;
     font-weight: bold;
 }
 
 .grid-Awards__name--sub1 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
     grid-area: 1 / 2 / span 2 / span 1;
     font-size: 18px;
     font-weight: bold;
 }
 
 .grid-Awards__name--sub2 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
     grid-area: 3 / 2 / span 2 / span 1;
     font-size: 18px;
     font-weight: bold;
 }
 
 .grid-Awards__year1 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
     grid-area: 1 / 4 / span 2 / span 1;
     font-size: 16px;
     font-weight: normal;
+    text-align: right;
 }
 
 .grid-Awards__year2 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
     grid-area: 3 / 4 / span 2 / span 1;
     font-size: 16px;
     font-weight: normal;
+    text-align: right;
 }
 
 
 /*  Footer Section */
 
 .footer {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 60% 10px 10% 10px 15% 10px 5% 10px 5% 10px 5%;
     grid-template-columns: 60% 10% 15% 5% 5% 5%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding-top: 146px;
+    -webkit-column-gap: 10px;
+    -moz-column-gap: 10px;
     column-gap: 10px;
     font-size: 18px;
     font-weight: bold;
